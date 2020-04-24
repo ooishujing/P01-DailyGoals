@@ -29,6 +29,7 @@ public class Summary extends AppCompatActivity {
         tv4.setText("Reflection: "+info[3]);
 
         Button btn = (Button) findViewById(R.id.btn);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
