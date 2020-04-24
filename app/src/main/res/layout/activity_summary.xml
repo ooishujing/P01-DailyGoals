@@ -37,4 +37,11 @@
         android:layout_weight="1"
         android:textColor="#373535"
          />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Close" />
 </LinearLayout>

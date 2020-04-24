@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Summary extends AppCompatActivity {
@@ -25,5 +27,16 @@ public class Summary extends AppCompatActivity {
         tv2.setText("Arrive on time so as not to miss important part of the lesson: "+info[1]);
         tv3.setText("Attempt the problem myself: "+info[2]);
         tv4.setText("Reflection: "+info[3]);
+
+        Button btn = (Button) findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent j = new Intent(Summary.this, MainActivity.class);
+                startActivity(j);
+            }
+        });
+
+
     }
 }
